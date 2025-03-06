@@ -1,0 +1,62 @@
+<label for="name">Enter your name:</label>
+<input type="text" id="name" name="name">
+
+
+
+
+<h2>Multiple Choice Questions</h2>
+
+
+<p>What is the value of x in the equation 2x + 5 = 11?</p>
+<input type="radio" id="q1a" name="q1" value="a">
+<label for="q1a">3</label>
+
+<input type="radio" id="q1b" name="q1" value="b">
+<label for="q1b">4</label>
+
+<input type="radio" id="q1c" name="q1" value="c">
+<label for="q1c">5</label>
+
+
+
+
+<p>What is the sum of &pi; and &frac12;?</p>
+<input type="radio" id="q2a" name="q2" value="a">
+<label for="q2a">&pi; + 0.5</label>
+
+<input type="radio" id="q2b" name="q2" value="b">
+<label for="q2b">&frac32;</label>
+
+<input type="radio" id="q2c" name="q2" value="c">
+<label for="q2c">2&pi;</label>
+
+
+
+
+<p>What is the value of y in the equation y - 3 = 7?</p>
+<input type="radio" id="q3a" name="q3" value="a">
+<label for="q3a">5</label>
+
+<input type="radio" id="q3b" name="q3" value="b">
+<label for="q3b">10</label>
+
+<input type="radio" id="q3c" name="q3" value="c">
+<label for="q3c">12</label>
+
+
+
+
+<h2>Word Problem</h2>
+
+
+<p>A bakery sells 250 loaves of bread per day. If each loaf costs $2.50, how much money does the bakery make in a day? Show your work and explain your answer.</p>
+<textarea rows="6" cols="50" name="word_problem"></textarea>
+
+
+
+
+<input type="submit" value="Submit Test">
+</form>
+
+
+<!-- End of Math Test -->
