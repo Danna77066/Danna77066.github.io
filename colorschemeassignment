@@ -1,0 +1,6 @@
+| Color Name | Background Color | Hex Value | RGB Value | HSL Value |
+| --- | --- | --- | --- | --- |
+| Soft Sand | <td style="background-color: #F5F5DC"></td> | #F5F5DC | rgb(245, 245, 220) | hsl(60, 20%, 90%) |
+| Warm Beige | <td style="background-color: #F0E4CC"></td> | #F0E4CC | rgb(240, 228, 204) | hsl(55, 30%, 85%) |
+| Sunset Orange | <td style="background-color: #FFA07A"></td> | #FFA07A | rgb(255, 160, 122) | hsl(25, 80%, 60%) |
+| Deep Coral | <td style="background-color: #FFC67D"></td> | #FFC67D | rgb(255, 198, 125) | hsl(30, 70%, 65%) |
