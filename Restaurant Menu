@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Restaurant Menus</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="menu breakfast">
+		<h1>Breakfast Menu</h1>
+		<ul>
+			<li>Eggs Benedict ($12)</li>
+			<li>Avocado Toast ($8)</li>
+			<li>Breakfast Burrito ($10)</li>
+			<li>Coffee ($2)</li>
+			<li>Tea ($2)</li>
+		</ul>
+	</div>
+
+	<div class="menu lunch">
+		<h1>Lunch Menu</h1>
+		<ul>
+			<li>Grilled Chicken Sandwich ($15)</li>
+			<li>Quiche of the Day ($14)</li>
+			<li>Soup and Salad ($12)</li>
+			<li>Iced Tea ($3)</li>
+			<li>Lemonade ($4)</li>
+		</ul>
+	</div>
+
+	<div class="menu dinner">
+		<h1>Dinner Menu</h1>
+		<ul>
+			<li>Grilled Steak ($25)</li>
+			<li>Roasted Chicken ($20)</li>
+			<li>Pan-Seared Salmon ($22)</li>
+			<li>Wine ($8/glass)</li>
+			<li>Cocktails ($12)</li>
+		</ul>
+	</div>
+</body>
+</html>
+
+
+
+CSS (in style.css file)
+
+.menu {
+	width: 400px;
+	height: 550px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	padding: 20px;
+	margin: 20px;
+}
+
+.breakfast {
+	background-image: url('breakfast-background.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.lunch {
+	background-image: url('lunch-background.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.dinner {
+	background-image: url('dinner-background.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.menu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.menu li {
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+.menu h1 {
+	text-align: center;
+	margin-bottom: 20px;
+}
