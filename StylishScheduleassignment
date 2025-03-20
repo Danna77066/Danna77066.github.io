@@ -1,0 +1,88 @@
+	<title>Daily Schedule</title>
+	<style>
+		table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+		
+		th, td {
+			border: 1px solid #ddd;
+			padding: 10px;
+			text-align: left;
+		}
+		
+		th {
+			background-color: #f0f0f0;
+		}
+		
+		.time-column {
+			width: 20%;
+		}
+		
+		.event-column {
+			width: 60%;
+		}
+		
+		.location-column {
+			width: 20%;
+		}
+		
+		#breakfast-row {
+			background-color: #ffe6cc;
+		}
+		
+		.lunch-row {
+			background-color: #ccffe6;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<tr>
+			<th class="time-column">Time</th>
+			<th class="event-column">Event</th>
+			<th class="location-column">Location</th>
+		</tr>
+		<tr id="breakfast-row">
+			<td>8:00 AM</td>
+			<td>Breakfast</td>
+			<td>Home</td>
+		</tr>
+		<tr>
+			<td>9:00 AM</td>
+			<td>Team Meeting</td>
+			<td>Office</td>
+		</tr>
+		<tr class="lunch-row">
+			<td>12:00 PM</td>
+			<td>Lunch</td>
+			<td>Cafeteria</td>
+		</tr>
+		<tr>
+			<td>1:00 PM</td>
+			<td>Client Meeting</td>
+			<td>Conference Room</td>
+		</tr>
+		<tr>
+			<td>3:00 PM</td>
+			<td>Coffee Break</td>
+			<td>Break Room</td>
+		</tr>
+		<tr class="lunch-row">
+			<td>6:00 PM</td>
+			<td>Dinner</td>
+			<td>Restaurant</td>
+		</tr>
+		<tr>
+			<td>7:30 PM</td>
+			<td>Yoga Class</td>
+			<td>Studio</td>
+		</tr>
+		<tr>
+			<td>9:00 PM</td>
+			<td>Relaxation Time</td>
+			<td>Home</td>
+		</tr>
+	</table>
+</body>
+</html>
