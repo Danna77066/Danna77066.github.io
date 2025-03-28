@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Members</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="team-members">
+            <article class="team-member">
+                <img src="team-member-1.jpg" alt="Team Member 1">
+                <div class="bio">
+                    <h2>Team Member 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                </div>
+            </article>
+            <article class="team-member">
+                <img src="team-member-2.jpg" alt="Team Member 2">
+                <div class="bio">
+                    <h2>Team Member 2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                </div>
+            </article>
+            <article class="team-member">
+                <img src="team-member-3.jpg" alt="Team Member 3">
+                <div class="bio">
+                    <h2>Team Member 3</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                </div>
+            </article>
+            <article class="team-member">
+                <img src="team-member-4.jpg" alt="Team Member 4">
+                <div class="bio">
+                    <h2>Team Member 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
+
+
+
+CSS (in styles.css file)
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2em;
+}
+
+.team-member {
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 20px;
+    width: calc(25% - 20px);
+}
+
+.team-member img {
+    float: left;
+    margin-right: 10px;
+    width: 100px;
+}
+
+.bio {
+    overflow: auto;
+}
+
+.bio h2 {
+    margin-top: 0;
+}
+
+/* Positioning example */
+.team-member:nth-child(2) .bio {
+    position: relative;
+    top: 20px;
+    left: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
