@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golf Scorecard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Golf Scorecard</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Player</th>
+                <th>Hole 1</th>
+                <th>Hole 2</th>
+                <th>Hole 3</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Player 1</td>
+                <td>4</td>
+                <td>5</td>
+                <td>3</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>Player 2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>12</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
+
+1. baseball.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baseball Scorecard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Baseball Scorecard</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Team</th>
+                <th>Inning 1</th>
+                <th>Inning 2</th>
+                <th>Inning 3</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Team A</td>
+                <td>2</td>
+                <td>0</td>
+                <td>1</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Team B</td>
+                <td>0</td>
+                <td>2</td>
+                <td>0</td>
+                <td>2</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
+
+1. bowling.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bowling Scorecard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Bowling Scorecard</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Player</th>
+                <th>Frame 1</th>
+                <th>Frame 2</th>
+                <th>Frame 3</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Player 1</td>
+                <td>10</td>
+                <td>8</td>
+                <td>9</td>
+                <td>27</td>
+            </tr>
+            <tr>
+                <td>Player 2</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>27</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
+
+CSS File (style.css):
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
