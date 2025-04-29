@@ -1,0 +1,25 @@
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+External Style Sheet
+
+The styling for this page is handled by an external style sheet, which includes CSS rules for layout, typography, and colors.
+
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  color: #00698f;
+}
+
+.step {
+  margin-bottom: 20px;
+}
+
+.screenshot {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
