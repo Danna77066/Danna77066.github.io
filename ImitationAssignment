@@ -1,0 +1,33 @@
+Project 1: Sepia Tone Image
+
+- Use the filter property to apply a sepia tone effect.
+- Example code: .sepia { filter: sepia(100%); }
+
+Project 2: Grayscale Image with Text Overlay
+
+- Use the filter property to apply a grayscale effect.
+- Use CSS positioning to overlay text on the image.
+- Example code: .grayscale { filter: grayscale(100%); }
+
+Project 3: Image with Drop Shadow
+
+- Use the box-shadow property to apply a drop shadow effect.
+- Example code: .drop-shadow { box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5); }
+
+Project 4: Football Field with Overlay
+
+- Use the background-image property to set the football field image.
+- Use the background-image property with url() to overlay the tic-tac-toe image.
+- Use CSS positioning to position the overlay image.
+- Example code: .football-field { background-image: url('football_field.jpg'); } .overlay { background-image: url('tic-tac-toe.png'); position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+
+Project 5: Image with Gradient Overlay
+
+- Use the linear-gradient property to create a gradient overlay.
+- Use CSS positioning to position the overlay.
+- Example code: .gradient-overlay { background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5)); position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+Project 6: Image with Blur Effect
+
+- Use the filter property to apply a blur effect.
+- Example code: .blur { filter: blur(5px); }
