@@ -1,0 +1,148 @@
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Flashcard Activity</h1>
+    <div class="flashcard-container">
+        <!-- Flashcards will be added here -->
+    </div>
+</body>
+</html>
+
+
+Step 2: Add CSS styles for the flashcard activity
+We will add CSS styles to make the flashcards look like cards and add a transition effect to reveal the answers.
+
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.flashcard-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flashcard {
+    margin: 20px;
+    width: 200px;
+    height: 150px;
+    perspective: 1000px;
+}
+
+.flashcard-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flashcard:hover .flashcard-inner {
+    transform: rotateY(180deg);
+}
+
+.flashcard-front, .flashcard-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flashcard-front {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.flashcard-back {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: rotateY(180deg);
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+h1 {
+    animation: animate 2s;
+}
+
+
+Step 3: Add JavaScript code to create the flashcards
+We will add JavaScript code to create the flashcards and add them to the container.
+
+// script.js
+
+const flashcardContainer = document.querySelector('.flashcard-container');
+
+const flashcards = [
+    {
+        question: 'What is the capital of France?',
+        answer: 'Paris'
+    },
+    {
+        question: 'What is the largest planet in our solar system?',
+        answer: 'Jupiter'
+    },
+    {
+        question: 'Who painted the Mona Lisa?',
+        answer: 'Leonardo da Vinci'
+    },
+    {
+        question: 'What is the chemical symbol for gold?',
+        answer: 'Au'
+    },
+    {
+        question: 'Who wrote Romeo and Juliet?',
+        answer: 'William Shakespeare'
+    },
+    {
+        question: 'What is the largest mammal on Earth?',
+        answer: 'Blue whale'
+    },
+    {
+        question: 'Who was the first president of the United States?',
+        answer: 'George Washington'
+    },
+    {
+        question: 'What is the smallest country in the world?',
+        answer: 'Vatican City'
+    }
+];
+
+flashcards.forEach((flashcard) => {
+    const flashcardElement = document.createElement('div');
+    flashcardElement.classList.add('flashcard');
+
+    const flashcardInnerElement = document.createElement('div');
+    flashcardInnerElement.classList.add('flashcard-inner');
+
+    const flashcardFrontElement = document.createElement('div');
+    flashcardFrontElement.classList.add('flashcard-front');
+    flashcardFrontElement.textContent = flashcard.question;
+
+    const flashcardBackElement = document.createElement('div');
+    flashcardBackElement.classList.add('flashcard-back');
+    flashcardBackElement.textContent = flashcard.answer;
+
+    flashcardInnerElement.appendChild(flashcardFrontElement);
+    flashcardInnerElement.appendChild(flashcardBackElement);
+    flashcardElement.appendChild(flashcardInnerElement);
+    flashcardContainer.appendChild(flashcardElement);
+});
